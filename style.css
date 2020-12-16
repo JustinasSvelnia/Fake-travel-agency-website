@@ -1,0 +1,311 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+label,
+input,
+p {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+button {
+  padding: 2rem 6rem;
+  background: #405d80;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+button:hover {
+  background: #39526e;
+  border-top-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+/* Navigation section with HERO */
+.main-header {
+  background: #192025c2;
+  color: #fff;
+}
+nav {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+  min-height: 10vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex: 2 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+#logo {
+  flex: 1 1 40rem;
+  font-family: "Pattaya", sans-serif;
+}
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.7), transparent),
+    url("./img/nature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero h3 {
+  padding: 5rem;
+}
+/* Locations section */
+#locations {
+  min-height: 100vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.9), transparent),
+    url("./img/city.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.locations-head {
+  width: 95%;
+  margin: auto;
+}
+.locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.5rem;
+  background: linear-gradient(#fff, #8d8d8c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.locations-head h3 {
+  padding: 4rem 0rem;
+  background: linear-gradient(#fff, #8d8d8c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cloud {
+  position: absolute;
+  height: 35%;
+  top: 0;
+  right: 0;
+}
+.moving-cloud-1 {
+  animation: cloudAnimatation1 5s infinite alternate ease-in-out 1s;
+}
+.moving-cloud-2 {
+  right: 13%;
+  z-index: -1;
+  animation: cloudAnimatation1 4.5s infinite alternate ease-in-out;
+}
+
+@keyframes cloudAnimatation1 {
+  from {
+    transform: translate(5%, -5%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/* Benefits section */
+.benefits-head {
+  background: #808891;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.benefits-head h3 {
+  padding: 1rem;
+}
+.cards {
+  width: 90%;
+  margin: auto;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.card {
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(78, 77, 77, 0.4),
+    0px 20px 20px rgba(209, 209, 209, 0.4);
+  text-align: center;
+}
+.card h4,
+p {
+  padding: 2rem;
+}
+.card-header {
+  background: #808891;
+}
+.fas {
+  margin: 2rem;
+}
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgb(0, 0, 0, 0.9), transparent),
+    url("./img/mountain.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form-wrapper {
+  background: rgba(176, 187, 197, 0.7);
+  width: 60%;
+  color: #fff;
+  border-radius: 20px;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form,
+.email-form {
+  padding: 3rem;
+  text-align: center;
+  outline: none;
+}
+.form-wrapper label {
+  margin: 0rem 3rem;
+}
+.form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.form-wrapper button:hover {
+  border-top-left-radius: 0px;
+}
+.form-wrapper input {
+  padding: 1rem 3rem;
+}
+footer {
+  background: #192025c2;
+}
+.footer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  min-height: 10vh;
+}
+footer h5 {
+  flex: 0 0 20rem;
+}
+footer ul {
+  display: flex;
+  flex: 0 0 13rem;
+  list-style: none;
+  margin: 0rem 2rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 933px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    width: 60%;
+  }
+  .locations-head h2 {
+    color: red;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    width: 70%;
+  }
+  .locations-head h2 {
+    color: yellow;
+  }
+}
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    width: 80%;
+  }
+  .locations-head h2 {
+    color: green;
+  }
+}
